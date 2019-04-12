@@ -1,0 +1,48 @@
+body
+	background-color: #5fb00c
+	font-family: 'TT Norms', sans-serif;
+	color: #ffffff
+	overflow-x: hidden
+.container
+	width: 90%
+	max-width: 1157px
+	margin: 0 auto
+
+*, *:after, *:before
+	box-sizing: border-box
+*:hover
+	 transition: 0.5s	
+input, button, textarea
+	outline: none	 
+
+a
+	text-decoration: none
+	&:hover
+		cursor: pointer
+
+
+@import 'header'
+@import 'advantages'
+@import 'feedback'
+@import 'embargo'
+@import 'goods'
+@import 'example'
+@import 'slider'
+@import 'sandwich'
+@import 'footer'
+
+
+@media (max-width: 1199px)
+	.container
+		width: 970px
+
+@media (max-width: 992px)
+ .container
+		width: 767px
+
+@media (max-width: 768px)
+	.container
+		width: 95%
+
+
+

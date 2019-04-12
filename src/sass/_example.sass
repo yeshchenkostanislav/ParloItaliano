@@ -1,0 +1,32 @@
+.example
+  padding-top: 212px
+  padding-bottom: 154px
+  &__item
+    display: flex
+    .text
+      position: relative
+      &__title
+        font-size: 35px
+        margin-bottom: 31px
+      &__subtitle
+        font-size: 25px
+        font-weight: 400
+    &-one
+      justify-content: flex-end
+      margin-bottom: 473px
+      .text
+        max-width: 625px
+        &::before
+          content: url(../img/example/example1.png)
+          position: absolute
+          top: -115px
+          left: -503px
+    &-two
+      justify-content: flex-start
+      .text
+        max-width: 658px
+        &::after
+          content: url(../img/example/example2.png)
+          position: absolute
+          top: -338px
+          right: -455px        
