@@ -7,8 +7,8 @@
     justify-content: space-around
     align-items: center
     .img
-      width: 390px
-      height: 390px
+      max-width: 390px
+      margin-right: 20px
       img
         filter: grayscale(100%)
     .text
@@ -22,3 +22,17 @@
         margin-bottom: 36px
       &__descr
         font-style: italic 
+
+@media (max-width: 992px)
+  .feedback
+    padding-top: 60px
+    &-wrap
+      flex-direction: column
+      align-items: center
+      .img
+        margin-bottom: 30px
+        margin-right: 0
+      .text
+        text-align: center
+        &__subtitle
+          max-width: 100%

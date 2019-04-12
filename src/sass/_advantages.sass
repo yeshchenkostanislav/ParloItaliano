@@ -2,6 +2,7 @@
   &-wrap
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     margin-bottom: 79px
     .start
       font-size: 23px
@@ -21,3 +22,17 @@
         font-size: 32px
         font-weight: 400 
         margin: 0 auto 
+
+@media (max-width: 1200px)
+  .advantages
+    &-wrap
+      justify-content: space-around
+      &__item
+        margin-bottom: 30px
+
+@media (max-width: 576px)
+  .advantages
+    &-wrap
+      &__item
+        .text
+          font-size: 28px

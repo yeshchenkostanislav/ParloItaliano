@@ -29,4 +29,55 @@
           content: url(../img/example/example2.png)
           position: absolute
           top: -338px
-          right: -455px        
+          right: -455px  
+
+@media (max-width: 1199px)
+  .example
+    &__item
+      &-one
+        .text
+          max-width: 580px
+          &::before
+            z-index: -1           
+            left: -402px
+      &-two
+        .text
+          max-width: 650px
+          &::after
+            z-index: -1            
+            right: -330px
+
+@media (max-width: 992px)
+  .example
+    &__item
+      &-one
+        .text
+          max-width: 580px
+          &::before
+            left: -235px
+      &-two
+        .text
+          max-width: 650px
+          &::after
+            right: -89px
+
+@media (max-width: 778px)            
+  .example
+    &__item
+      &-two
+        .text
+          &::after
+            display: none
+
+@media (max-width: 576px)  
+  .example
+    padding-top: 50px
+    padding-bottom: 50px
+    &__item
+      &-one
+        margin-bottom: 50px
+        .text
+          &::before
+            display: none
+
+
